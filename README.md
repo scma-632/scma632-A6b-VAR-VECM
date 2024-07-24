@@ -1,4 +1,27 @@
-# scma632-A6b-VAR-VECM
+# scma632-A6b-VAR/VECM
+## VAR/VECM Workflow
+
+1. **Start with Time Series Data (GDP, SBI, SBIS)**
+2. **Unit Root Test**
+   - **Stationary at Level**
+     - Proceed with **VAR Analysis**
+   - **Not Stationary**
+     - Test for **Stationarity at First Difference**
+       - **Johansen's Co-Integration Test**
+         - If **Co-Integration Exists**:
+           1. Determine **Lag Length**
+           2. Conduct **Co-Integration Test**
+           3. Build **VECM Model**
+         - If **No Co-Integration**:
+           - Perform **Unrestricted VAR Analysis**
+3. **Post VAR/VECM Analysis**
+   - **Granger's Causality Test**
+   - **Impulse Response Function (IRF) and Variance Decomposition (VD) Analysis**
+4. **Forecasting**
+5. **Output**
+
+
+
 
 ### Choosing between a Vector Autoregressive (VAR) model and a Vector Error Correction Model (VECM) depends primarily on whether your variables are cointegrated. Here's a step-by-step process to decide which model to use:
 
@@ -32,24 +55,3 @@ Data Considerations: The choice may also depend on data availability, frequency,
 VAR: Use for stationary or differenced non-stationary data without cointegration.
 VECM: Use for non-stationary data with cointegration.
 Always ensure proper model diagnostics (such as residual analysis, stability tests, and checking for autocorrelation) after fitting either model to ensure it adequately captures the data's dynamics.
-
-## VAR/VECM Workflow
-
-1. **Start with Time Series Data (GDP, SBI, SBIS)**
-2. **Unit Root Test**
-   - **Stationary at Level**
-     - Proceed with **VAR Analysis**
-   - **Not Stationary**
-     - Test for **Stationarity at First Difference**
-       - **Johansen's Co-Integration Test**
-         - If **Co-Integration Exists**:
-           1. Determine **Lag Length**
-           2. Conduct **Co-Integration Test**
-           3. Build **VECM Model**
-         - If **No Co-Integration**:
-           - Perform **Unrestricted VAR Analysis**
-3. **Post VAR/VECM Analysis**
-   - **Granger's Causality Test**
-   - **Impulse Response Function (IRF) and Variance Decomposition (VD) Analysis**
-4. **Forecasting**
-5. **Output**
