@@ -32,3 +32,32 @@ Data Considerations: The choice may also depend on data availability, frequency,
 VAR: Use for stationary or differenced non-stationary data without cointegration.
 VECM: Use for non-stationary data with cointegration.
 Always ensure proper model diagnostics (such as residual analysis, stability tests, and checking for autocorrelation) after fitting either model to ensure it adequately captures the data's dynamics.
+
+Time Series Data (CRUDE_BRENT, MAIZE, WHEAT)
+             |
+       Unit Root Test
+             |
+         /       \
+ Stationary   Not Stationary
+   (level)       |
+     |        Stationary at 
+     |         first difference
+     |              |
+  VAR Analysis   Johansen's 
+                 Co-Integration Test
+                      |
+                 /         \
+                Yes         No
+                 |           |
+            Lag Length   Unrestricted 
+                 |         VAR Analysis
+         Co-Integration Test    |
+                 |           Granger's
+             VECM Model     Causality Test
+                 |                |
+                 |          IRF and VD Analysis
+                 \________________/
+                           |
+                      Forecasting
+                           |
+                          Output
