@@ -33,7 +33,7 @@ VAR: Use for stationary or differenced non-stationary data without cointegration
 VECM: Use for non-stationary data with cointegration.
 Always ensure proper model diagnostics (such as residual analysis, stability tests, and checking for autocorrelation) after fitting either model to ensure it adequately captures the data's dynamics.
 
-## Time Series Analysis Workflow
+## VAR/VECM Workflow
 
 1. **Start with Time Series Data (GDP, SBI, SBIS)**
 2. **Unit Root Test**
