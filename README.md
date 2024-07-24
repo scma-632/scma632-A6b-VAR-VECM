@@ -1,6 +1,6 @@
 # scma632-A6b-VAR-VECM
 
-## Choosing between a Vector Autoregressive (VAR) model and a Vector Error Correction Model (VECM) depends primarily on whether your variables are cointegrated. Here's a step-by-step process to decide which model to use:
+### Choosing between a Vector Autoregressive (VAR) model and a Vector Error Correction Model (VECM) depends primarily on whether your variables are cointegrated. Here's a step-by-step process to decide which model to use:
 
 ## 1. Stationarity Testing
 First, check if your time series data are stationary. This can be done using unit root tests like the Augmented Dickey-Fuller (ADF) test, Phillips-Perron (PP) test, or KPSS test.
