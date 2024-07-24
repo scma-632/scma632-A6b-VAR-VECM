@@ -1,7 +1,7 @@
 # scma632-A6b-VAR/VECM
 ## VAR/VECM Workflow
 
-1. **Start with Time Series Data (GDP, SBI, SBIS)**
+1. **Start with Time Series Data (CRUDE_BRENT, MAIZE, SOYABEANS)**
 2. **Unit Root Test**
    - **Stationary at Level**
      - Proceed with **VAR Analysis**
