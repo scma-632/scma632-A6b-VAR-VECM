@@ -33,6 +33,27 @@ VAR: Use for stationary or differenced non-stationary data without cointegration
 VECM: Use for non-stationary data with cointegration.
 Always ensure proper model diagnostics (such as residual analysis, stability tests, and checking for autocorrelation) after fitting either model to ensure it adequately captures the data's dynamics.
 
+## Time Series Analysis Workflow
+
+1. **Start with Time Series Data (GDP, SBI, SBIS)**
+2. **Unit Root Test**
+   - **Stationary at Level**
+     - Proceed with **VAR Analysis**
+   - **Not Stationary**
+     - Test for **Stationarity at First Difference**
+       - **Johansen's Co-Integration Test**
+         - If **Co-Integration Exists**:
+           1. Determine **Lag Length**
+           2. Conduct **Co-Integration Test**
+           3. Build **VECM Model**
+         - If **No Co-Integration**:
+           - Perform **Unrestricted VAR Analysis**
+3. **Post VAR/VECM Analysis**
+   - **Granger's Causality Test**
+   - **Impulse Response Function (IRF) and Variance Decomposition (VD) Analysis**
+4. **Forecasting**
+5. **Output**
+
 Time Series Data (CRUDE_BRENT, MAIZE, WHEAT)
              |
        Unit Root Test
